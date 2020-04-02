@@ -1,0 +1,147 @@
+.projects {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("../images/bg-col-1.JPG");
+  background-size: 100% 100%;
+  min-height: 50vh;
+
+}
+
+.projects h1{
+  padding-top: 9%;
+  font-size: 3em;
+  color: white;
+  font-family: inherit;
+  margin-bottom: 2%;
+}
+.projects p{
+  font-size: 1.25em;
+  color: white;
+  font-family: inherit;
+}
+.projects-inner{
+  padding: 2%;
+  margin: 0 auto;
+  width: 100vw;
+}
+.project-cards{
+    display: flex;
+    align-items: center;
+    margin: 0 auto 75px;
+    width: 85%;
+}
+.card-body{
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 30px 10px rgba(0,0,0,0.2);
+  font-family: inherit;
+  margin: 10px 0;
+  min-height: 375px;
+  overflow: hidden;
+  width: 100%;
+}
+@media (min-width:768px){
+  .container{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .card-body{
+    margin: 10px 5px;
+    width: 45%;
+  }
+}
+@media (min-width:1024px){
+  .card-body{
+    margin: 10px 5px;
+    width: 30%;
+  }
+}
+.content-img{
+  border-bottom: 4px solid #FF7F6B;
+  height: 150px;
+  overflow: hidden;
+}
+.card-body img{
+  height: auto;
+  object-position: center center;
+  width: 100%;
+}
+.card-body .card-text{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (min-width:768px){
+  .card-body .card-text{
+    padding-bottom: 5px;
+  }
+}
+@media (min-width:1024px){
+  .card-body .card-text{
+    margin-top: 10px;
+    padding-bottom: 0;
+  }
+}
+.card-text h2{
+  font-family:inherit;
+  color: black;
+  font-size: 1.75rem;
+  margin-top: 10px;
+}
+.card-text p.text{
+  color: black;
+  font-size: .95rem;
+  margin: 10px auto;
+  text-align: center;
+  width: 85%;
+}
+.card-but{
+  margin-top: 10px;
+  background-color: #5190FF;
+  border-color: #5190FF;
+}
+.popup {
+  display: none;
+  position: fixed;
+  padding: 10px;
+  top:50%;
+  left:50%;
+  width:400px;  /* adjust as per your needs */
+  height:500px;   /* adjust as per your needs */
+  margin-left:-200px;   /* negative half of width above */
+  margin-top:-250px;   /* negative half of height above */
+  background: #FFF;
+  z-index: 20;
+  -webkit-box-shadow:  0px 0px 0px 9999px rgba(0, 0, 0, 0.5);
+  box-shadow:  0px 0px 0px 9999px rgba(0, 0, 0, 0.5);
+}
+.popup h3{
+  margin-top: 20px;
+  font-family: inherit;
+  font-size: 1.5em;
+  color: black;
+}
+.popup
+a:hover,
+a:active {
+  text-decoration: underline;
+}
+
+.popup a,
+.popup a:visited {
+  font-family: inherit;
+  font-size: 1.25em;
+  color: #FF7F6B;
+  margin-top:30px;
+}
+
+.popup p {
+  margin: 15px;
+  font-family: inherit;
+  font-size: 1.25em;
+  color: black;
+}
+

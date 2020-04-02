@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!-- Styling with CSS, this first thing sets fonts! -->
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro&display=swap');
+
+      h1, h2, h3, h4, h5, h6{
+        font-family: 'Source Sans Pro';
+      }
+      p, a, small{
+        font-family: 'Roboto';
+      }
+    </style>
+
+    <!-- Styling with CSS, these are files for each section, to avoid messiness -->
+    <link rel="stylesheet" href="static/style.css"> <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="static/navbar.css"> <!-- Navbar Stylesheet -->
+    <link rel="stylesheet" href="static/intro.css"> <!-- Intro and Hero Stylesheet -->
+    <link rel="stylesheet" href="static/about.css"> <!-- About Section Stylesheet -->
+    <link rel="stylesheet" href="static/footer.css"> <!-- Footer Stylesheet -->
+    <link rel="stylesheet" href="static/projects.css"> <!-- Footer Stylesheet -->
+
+    <title>Neha Bagalkot</title>
+    </head>
+    <body>
+      <main>
+        <!-- Navbar / fixed at the top -->
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active mr-3">
+                <a class="nav-link" href="#">HOME</a>
+              </li>
+              <li class="nav-item mr-3">
+                <a class="nav-link" href="#about">ABOUT</a>
+              </li>
+              <li class="nav-item mr-3">
+                <a class="nav-link" href="#projects">PROJECTS</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- The Hero or Intro part of the site...add picture of self later --> 
+        <section class="hero">
+          <div class="hero-inner">
+            <h1><strong>NEHA BAGALKOT</strong></h1>
+            <h3>student - programmer - researcher</h3>
+          </div>
+          <img src="images/scroll.png" alt="">
+        </section>
+
+        <!-- About Section, fill here --> 
+        <section class="about" id="about">
+          <div class="about-inner">
+            <h1><strong>about me.</strong></h1>
+            <p>Hello there! My name is Neha Bagalkot, and I am a senior at Thomas Jefferson High School<br>
+              for Science and Technology. I love computer science, and when I am not coding or studying,<br> I am apart of my school's softball team and my local dance center.</p>
+              <img src="images/me.jpg" alt=""> <!-- profile picture -->
+          </div>
+        </section>
+        
+        <!-- Projects Section, fill here --> 
+        <section class="projects" id="projects">
+          <div class="projects-inner">
+            <h1><strong>what i'm working on.</strong></h1>
+            <p>I have experience programming in Java, Python, HTML, CSS, and Javascript as well as building
+              <br>
+            computer vision and machine learning algorithms.</p>
+            
+            <!-- actual projects to display....can change in the future manually-->
+            <div class ="project-cards">
+            <!--   card 1 -->
+              <div class="card-body">
+                <div class="content-img">
+                  <img src="images/placeholder.jpg" alt="">
+                </div>
+                <div class="card-text">
+                  <h2>Senior Research</h2>
+                  <p class="text">Short description!</p>
+                  <button class= "card-but btn btn-dark" onclick="window.location='https://github.com/nehagb99/research-sophia_neha'">Read More</button>
+                </div>
+              </div>
+              <!--   card 2 -->
+              <div class="card-body">
+                <div class="content-img">
+                  <img src="images/placeholder.jpg" alt="">
+                </div>
+                <div class="card-text">
+                  <h2>Mollusk Research</h2>
+                  <p class="text">Short description!</p>
+                  <button class= "card-but btn btn-dark" onclick="show('popup1')">Read More</button>
+                </div>
+              </div>
+              <!--   card 3 -->
+              <div class="card-body">
+                <div class="content-img">
+                  <img src="images/placeholder.jpg" alt="">
+                </div>
+                <div class="card-text">
+                  <h2>Dance</h2>
+                  <p class="text">Short description!</p>
+                  <button class= "card-but btn btn-dark" onclick="show('popup2')">Read More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- POP UPS -->
+          <div class="popup" id="popup1">
+            <h3><strong>Freshman Research</strong></h3>
+            <p>Fill in information here. Talk about what you did!</p>
+            <a href="#projects" onclick="hide('popup1')">close</a>
+          </div>
+          <div class="popup" id="popup2">
+            <h3><strong>Dance</strong></h3>
+            <p>Fill in information here. Talk about what you did! Check out my dance below!</p>
+            <iframe width="350" height="250"
+              src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
+              </iframe>
+            <a href="#projects" onclick="hide('popup2')">close</a>
+          </div>
+        </section>
+
+        <!-- Footer with credits -->
+        <footer>
+          <p><strong>Neha Bagalkot &copy; 2020<br>
+            Created by <a href="https://alexisechano.github.io/">Alexis Echano<a></strong></p>
+        </footer>
+      
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="static/js/script.js"></script>
+      </main>  
+    </body>
+</html>
